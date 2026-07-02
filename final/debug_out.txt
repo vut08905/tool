@@ -1,0 +1,7 @@
+251: btn = tk.Button(up_win, text="🚀 BẮT ĐẦU CẬP NHẬT", font=("Segoe UI", 10, "bold"), fg="white", bg="#4ade80",
+847: # Bắt đầu đếm ngược thời gian bản quyền
+1176: self.step_label = ttk.Label(row1, text='🔄 Chưa bắt đầu')
+1196: self.start_btn = tk.Button(ctrl, text='🚀 Bắt đầu', bg='#0078D4', fg='white',
+1785: # Bắt đầu đếm ngược
+1915: """Bắt đầu automation và log real-time ra giao diện"""
+2809: # Nếu khoảng tiếp theo bắt đầu SỚM HƠN HOẶC BẰNG dt của mình => cắt dt của mình lại ngay trước nó
