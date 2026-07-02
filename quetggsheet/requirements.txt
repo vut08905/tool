@@ -1,0 +1,16 @@
+# Cài đặt các package cần thiết
+# Chạy: pip install -r requirements.txt
+
+# Cho Selenium
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+
+# Cho Google Sheets API
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+google-api-python-client>=2.100.0
+
+# Utilities
+pandas>=2.1.0
+openpyxl>=3.1.2

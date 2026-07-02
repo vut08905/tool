@@ -1,0 +1,224 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         THÔNG TIN PACKAGE - ULSA ĐĂNG KÝ TÍN CHỈ           ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 THÔNG TIN CHUNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tên package     : ULSA_EXE_DEPLOY
+Phiên bản       : 1.0
+Build date      : February 2026
+Kích thước      : ~67 MB
+Platform        : Windows 10/11
+
+
+📋 NỘI DUNG PACKAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ ULSA_DangKyTinChi.exe (46 MB)
+   → File thực thi chính, chứa tất cả thư viện Python đã đóng gói
+
+✅ DOWNLOAD_CHROMEDRIVER.bat
+   → Script tự động tải ChromeDriver phù hợp
+
+✅ download_chromedriver.ps1
+   → Script PowerShell hỗ trợ tải ChromeDriver
+
+✅ HUONG_DAN_SU_DUNG.txt
+   → Hướng dẫn chi tiết bằng tiếng Việt
+
+✅ README.md
+   → Tài liệu kỹ thuật và hướng dẫn nâng cao
+
+✅ automation/
+   ├── auto_config.json              (File cấu hình chính)
+   ├── auto_login_with_title_check.py
+   ├── auto_with_save.py
+   └── ... (các scripts automation khác)
+
+✅ drivers/
+   └── README.md                     (Hướng dẫn về ChromeDriver)
+
+✅ b*.html
+   → Các file giao diện HTML (b1.html, b2.html, ...)
+
+
+🎯 ĐẶC ĐIỂM NỔI BẬT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ STANDALONE - Chạy độc lập:
+   ✅ KHÔNG CẦN cài Python
+   ✅ KHÔNG CẦN cài thư viện
+   ✅ CHỈ CẦN Chrome + ChromeDriver
+
+✨ TỰ ĐỘNG 100%:
+   ✅ Tự động phát hiện Chrome version
+   ✅ Tự động tải ChromeDriver phù hợp
+   ✅ Tự động xử lý lỗi và retry
+
+✨ DỄ SỬ DỤNG:
+   ✅ Giao diện đồ họa thân thiện
+   ✅ Không cần kiến thức lập trình
+   ✅ Cấu hình đơn giản qua file JSON
+
+✨ PORTABLE:
+   ✅ Copy và chạy ngay trên máy khác
+   ✅ Không cần cài đặt
+   ✅ Không ghi registry
+
+
+⚙️ YÊU CẦU HỆ THỐNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bắt buộc:
+   ✅ Windows 10/11 (64-bit)
+   ✅ Google Chrome (phiên bản bất kỳ)
+   ✅ Kết nối Internet
+
+Không cần:
+   ❌ Python
+   ❌ pip
+   ❌ Virtual environment
+   ❌ Bất kỳ thư viện nào
+   ❌ Visual Studio / Build tools
+
+
+🚀 CÁCH SỬ DỤNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BƯỚC 1: Giải nén package này (nếu đang ở dạng .zip)
+
+BƯỚC 2: Cài Google Chrome (nếu chưa có)
+   → https://www.google.com/chrome/
+
+BƯỚC 3: Tải ChromeDriver
+   → Double click: DOWNLOAD_CHROMEDRIVER.bat
+
+BƯỚC 4: Cấu hình
+   → Mở file: automation\auto_config.json
+   → Điền MSSV, mật khẩu, mã học phần
+
+BƯỚC 5: Chạy tool
+   → Double click: ULSA_DangKyTinChi.exe
+   → Đợi 10-30 giây lần đầu (giải nén thư viện)
+   → Sử dụng giao diện hoặc để tự động chạy
+
+
+📤 CHIA SẺ CHO BẠN BÈ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Bạn có thể chia sẻ toàn bộ thư mục ULSA_EXE_DEPLOY này:
+
+1. Nén thư mục này thành file .zip (hoặc .rar)
+2. Upload lên Google Drive / OneDrive / Mega
+3. Gửi link cho bạn bè
+
+⚠️ Lưu ý khi chia sẻ:
+   - XÓA file automation\auto_config.json của bạn trước
+     (vì có mật khẩu!)
+   - Hoặc tạo file auto_config.json mẫu:
+     {
+         "login": {
+             "username": "MSSV_CUA_BAN",
+             "password": "MATKHAU_CUA_BAN"
+         },
+         "registration": {
+             "course_codes": ["DHMT13201"]
+         }
+     }
+
+
+🔒 BẢO MẬT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ QUAN TRỌNG:
+   - File auto_config.json chứa mật khẩu ULSA của bạn
+   - KHÔNG chia sẻ file này cho người khác
+   - Mật khẩu được lưu dạng plain text (không mã hóa)
+
+💡 Khuyến nghị:
+   - Đổi mật khẩu ULSA định kỳ
+   - Không để file auto_config.json ở nơi công cộng
+   - Xóa file này sau khi dùng xong (nếu cần)
+
+
+🔧 KHẮC PHỤC SỰ CỐ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ File .exe không chạy được:
+   → Chuột phải → Properties → Unblock → OK
+
+❌ Windows Defender cảnh báo:
+   → Click "More info" → "Run anyway"
+
+❌ Lỗi "Không tìm thấy ChromeDriver":
+   → Chạy DOWNLOAD_CHROMEDRIVER.bat
+
+❌ Lỗi "Không kết nối được Chrome":
+   → Update Chrome lên phiên bản mới nhất
+   → Chạy lại DOWNLOAD_CHROMEDRIVER.bat
+
+❌ Lỗi "Đăng nhập thất bại":
+   → Kiểm tra username/password trong auto_config.json
+   → Test đăng nhập thủ công trên web ULSA
+
+❌ File .exe chạy lâu (30-60 giây lần đầu):
+   → Đây là bình thường, do PyInstaller giải nén thư viện
+   → Từ lần 2 trở đi sẽ nhanh hơn
+
+
+📊 KÍCH THƯỚC CÁC COMPONENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Component                        Kích thước
+─────────────────────────────────────────────
+ULSA_DangKyTinChi.exe            ~46 MB
+automation/                      ~20 MB
+drivers/ (ChromeDriver)          ~15 MB
+HTML files                       ~1 MB
+Scripts & docs                   <1 MB
+─────────────────────────────────────────────
+TỔNG CỘNG                        ~67 MB
+
+
+⚖️ ĐIỀU KHOẢN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Sử dụng tự do cho mục đích học tập
+✅ Chia sẻ cho bạn bè cùng trường
+✅ Cải tiến và phát triển thêm tính năng
+
+⚠️ KHÔNG được:
+   ❌ Sử dụng để spam hệ thống ULSA
+   ❌ Sử dụng cho mục đích thương mại
+   ❌ Đánh cắp thông tin người dùng
+   ❌ Gây hại cho hệ thống trường
+
+
+📞 HỖ TRỢ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 Đọc hướng dẫn chi tiết:
+   → HUONG_DAN_SU_DUNG.txt (tiếng Việt)
+   → README.md (English + kỹ thuật)
+
+🔍 Xem log khi chạy:
+   → Mở Command Prompt tại thư mục tool
+   → Gõ: ULSA_DangKyTinChi.exe
+   → Log chi tiết sẽ hiển thị
+
+📝 File log tự động:
+   → registration_result.json (kết quả đăng ký)
+   → screenshots/ (ảnh chụp màn hình khi lỗi)
+
+
+🎓 CHÚC BẠN ĐĂNG KÝ THÀNH CÔNG!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Build by: GitHub Copilot + Python + Selenium + PyInstaller
+Version: 1.0
+Date: February 2026
+
+Nếu tool hữu ích, hãy chia sẻ cho bạn bè! 🚀

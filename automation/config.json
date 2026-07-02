@@ -1,0 +1,28 @@
+{
+    "config": {
+        "target_url": "http://sinhvien.ulsa.edu.vn/Login.aspx",
+        "timeout": 15,
+        "screenshot_on_error": true,
+        "auto_close_browser": false,
+        "headless_mode": false
+    },
+    "selectors": {
+        "username_field": "txtusername",
+        "password_field": "txtpassword",
+        "remember_checkbox": "chkremember",
+        "login_button": "btnDangNhap",
+        "form_id": "Form1"
+    },
+    "chrome_options": [
+        "--start-maximized",
+        "--disable-blink-features=AutomationControlled",
+        "--disable-dev-shm-usage",
+        "--no-sandbox"
+    ],
+    "messages": {
+        "success": "Đăng nhập thành công!",
+        "failed": "Đăng nhập thất bại!",
+        "timeout": "Hết thời gian chờ",
+        "error": "Đã xảy ra lỗi"
+    }
+}

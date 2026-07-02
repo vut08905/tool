@@ -1,0 +1,3 @@
+nhấn tổ hợp phím win + r ra thanh tìm kiếm nhập cmd nhấn enter
+nhập cd /d d:\webtruong4.1 nhấn enter
+nhập D:/webtruong4.1/.venv/Scripts/python.exe complete_gui.py nhấn enter là chương trình khởi động

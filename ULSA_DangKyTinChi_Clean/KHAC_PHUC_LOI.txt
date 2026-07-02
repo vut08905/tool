@@ -1,0 +1,65 @@
+════════════════════════════════════════════════════════════════════
+   ⚠️  LỖI: The system cannot find the file specified
+════════════════════════════════════════════════════════════════════
+
+📌 NGUYÊN NHÂN:
+
+   Thư mục CLEAN chưa có Python virtual environment (.venv)
+
+════════════════════════════════════════════════════════════════════
+
+✅ CÁCH KHẮC PHỤC:
+
+   Bước 1: Chạy file setup
+   ----------------------
+   
+   👉 Click vào:  SETUP_FIRST_TIME.bat
+   
+   ⏳ Chờ script cài đặt xong (~2-5 phút)
+
+
+   Bước 2: Tải ChromeDriver
+   ------------------------
+   
+   👉 Click vào:  DOWNLOAD_CHROMEDRIVER.bat
+   
+   ⏳ Script sẽ tự động tải ChromeDriver
+
+
+   Bước 3: Chạy lại tool
+   ---------------------
+   
+   👉 Click vào:  RUN_GUI.bat
+   
+   🎉 Tool sẽ hoạt động bình thường!
+
+════════════════════════════════════════════════════════════════════
+
+💡 GHI CHÚ:
+
+   • Tool cần .venv (virtual environment) để chạy
+   • SETUP_FIRST_TIME.bat sẽ tạo .venv và cài dependencies
+   • Chỉ cần chạy setup 1 lần duy nhất
+   • Các lần sau chỉ cần chạy RUN_GUI.bat
+
+════════════════════════════════════════════════════════════════════
+
+📂 THƯ MỤC SAU KHI SETUP:
+
+   ULSA_DangKyTinChi_Clean/
+   ├── .venv/                    ← Sẽ được tạo bởi SETUP_FIRST_TIME
+   │   └── Scripts/
+   │       └── python.exe        ← Python để chạy automation
+   ├── automation/
+   ├── drivers/
+   └── *.bat
+
+════════════════════════════════════════════════════════════════════
+
+🔧 ĐÃ SỬA:
+
+   ✅ Code đã được cập nhật để tự động tìm Python
+   ✅ Nếu không có .venv, sẽ dùng Python hệ thống
+   ✅ Hiển thị lỗi rõ ràng và hướng dẫn khắc phục
+
+════════════════════════════════════════════════════════════════════

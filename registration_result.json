@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-07-14T09:58:21.499874",
+  "student_id": "1119090120",
+  "test_mode": "ulsa",
+  "requested_courses": [
+    "CNXH0722H_D19KL.01_LT",
+    "CSXH0322L_D20CT.01_LT",
+    "SKCĐ0322H_D18CT.01_LT",
+    "CTDL1223L_D20CN.04_LT",
+    "PNT10422H_D19BH.01_LT"
+  ],
+  "selected_courses": [
+    {
+      "code": "CNXH0722H",
+      "name": "18/08/25-02/11/25 | Thứ 5(T13-15)",
+      "class": "CNXH0722H_D19KL.01_LT",
+      "credits": "2"
+    },
+    {
+      "code": "CSXH0322L",
+      "name": "18/08/25-19/10/25 | Thứ 5(T13-15) | 10/11/25-23/11/25 | Thứ 5(T13-15)",
+      "class": "CSXH0322L_D20CT.01_LT",
+      "credits": "2"
+    },
+    {
+      "code": "SKCĐ0322H",
+      "name": "18/08/25-02/11/25 | Thứ 2(T1-3)",
+      "class": "SKCĐ0322H_D18CT.01_LT",
+      "credits": "2"
+    },
+    {
+      "code": "CTDL1223L",
+      "name": "18/08/25-28/09/25 | Thứ 2(T1-5) | 20/10/25-09/11/25 | Thứ 2(T1-5)",
+      "class": "CTDL1223L_D20CN.04_LT",
+      "credits": "3"
+    },
+    {
+      "code": "PNT10422H",
+      "name": "18/08/25-02/11/25 | Thứ 4(T7-9)",
+      "class": "PNT10422H_D19BH.01_LT",
+      "credits": "8"
+    }
+  ],
+  "actually_registered": [],
+  "registration_successful": false,
+  "total_requested": 5,
+  "total_selected": 5,
+  "total_registered": 0,
+  "not_found_classes": [],
+  "failed_classes": [
+    "CNXH0722H_D19KL.01_LT",
+    "CSXH0322L_D20CT.01_LT",
+    "SKCĐ0322H_D18CT.01_LT",
+    "CTDL1223L_D20CN.04_LT",
+    "PNT10422H_D19BH.01_LT"
+  ],
+  "notification": "",
+  "success_rate": 0.0
+}

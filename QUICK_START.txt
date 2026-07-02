@@ -1,0 +1,91 @@
+╔════════════════════════════════════════════════════════╗
+║   🚀 QUICK START - BUILD FILE .EXE                    ║
+╚════════════════════════════════════════════════════════╝
+
+📌 MỤC ĐÍCH:
+   Đóng gói tool thành file .exe để dễ chia sẻ
+   Máy nào cũng chạy được mà không cần cài Python!
+
+
+🔧 CHUẨN BỊ (1 LẦN DUY NHẤT):
+   ✅ Cài Python 3.8-3.11
+      → https://www.python.org/downloads/
+      → Nhớ tick "Add Python to PATH"
+
+
+🏗️ BUILD FILE .EXE:
+
+   ╔═══════════════════════════════════════════╗
+   ║  CÁCH 1: ĐƠN GIẢN NHẤT (KHUYẾN NGHỊ)     ║
+   ╚═══════════════════════════════════════════╝
+   
+   Click đúp vào:
+   
+   📄 build_exe.bat
+   
+   → Chờ 2-5 phút
+   → Kết quả: dist\ULSA_DangKyTinChi.exe
+   
+
+   ╔═══════════════════════════════════════════╗
+   ║  CÁCH 2: BUILD NHẸ HƠN                   ║
+   ╚═══════════════════════════════════════════╝
+   
+   Click đúp vào:
+   
+   📄 build_exe_simple.bat
+   
+   → File .exe nhỏ hơn (~150MB)
+
+
+📦 KẾT QUẢ:
+
+   webtruong4.1/
+   ├── dist/
+   │   └── ULSA_DangKyTinChi.exe  ← GỬI FILE NÀY
+   │
+   └── build/  ← Có thể xóa
+
+
+✅ TEST:
+   1. Copy file .exe ra Desktop
+   2. Click đúp
+   3. Nhập tài khoản và test
+
+
+📤 CHIA SẺ:
+   
+   Cách 1: Gửi file .exe trực tiếp
+   Cách 2: Nén thành .zip rồi gửi
+   
+   → Người nhận chỉ cần click đúp là chạy!
+
+
+⚠️ LƯU Ý:
+
+   ✓ File .exe to (150-300MB) - Bình thường!
+   ✓ Lần đầu khởi động hơi lâu - Bình thường!
+   ✓ Windows cảnh báo - Click "Run anyway"
+   ✓ Người dùng cần có Chrome cài sẵn
+
+
+🐛 LỖI THƯỜNG GẶP:
+
+   ❌ "Python not found"
+      → Cài Python và thêm vào PATH
+   
+   ❌ "Module not found"  
+      → Chạy: pip install -r requirements_full.txt
+   
+   ❌ File .exe không chạy
+      → Build với console: thay --windowed = --console
+
+
+📚 CHI TIẾT HƠN:
+   
+   📄 Đọc file: HUONG_DAN_BUILD_EXE.md
+
+
+╔════════════════════════════════════════════════════════╗
+║               CHÚC BẠN THÀNH CÔNG! 🎉                 ║
+╚════════════════════════════════════════════════════════╝

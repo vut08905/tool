@@ -1,0 +1,15 @@
+{
+  "login_info": {
+    "student_id": "",
+    "password": ""
+  },
+  "course_selections": {
+    "subject_names_b1": [],
+    "class_names_b2": []
+  },
+  "created_time": "2025-07-15T16:14:54.646414",
+  "automation_settings": {
+    "screenshot_on_success": true,
+    "test_mode": "ulsa"
+  }
+}

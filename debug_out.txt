@@ -1,0 +1,9 @@
+230:     del "lophoc.xlsx" >nul 2>&1
+231:     ren "__update_temp_excel.xlsx" "lophoc.xlsx"
+1038:         self.excel_path_entry.insert(0, 'lophoc.xlsx')
+1296:             excel_file = "lophoc.xlsx"
+1868:                 excel_path = config_data.get('excel_file_path', 'lophoc.xlsx')
+2203:                 excel_file = "lophoc.xlsx"
+2225:             self.log_message("📖 Đang đọc file lophoc.xlsx...")
+2380:                 excel_file = "lophoc.xlsx"
+2914:                 excel_file = "lophoc.xlsx"

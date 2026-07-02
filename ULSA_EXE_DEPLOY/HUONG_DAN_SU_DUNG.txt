@@ -1,0 +1,180 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║       HƯỚNG DẪN SỬ DỤNG - ULSA ĐĂNG KÝ TÍN CHỈ TỰ ĐỘNG     ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📌 TỔNG QUAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tool này giúp bạn đăng ký học phần trên hệ thống ULSA một cách 
+tự động, tiết kiệm thời gian và đảm bảo không bị trễ khi mở đăng ký.
+
+
+🔧 YÊU CẦU HỆ THỐNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Windows 10/11
+
+✅ Google Chrome (phiên bản mới nhất)
+   👉 Tải tại: https://www.google.com/chrome/
+
+✅ Kết nối Internet ổn định
+
+
+📦 THIẾT LẬP LẦN ĐẦU (QUAN TRỌNG!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BƯỚC 1: Cài Google Chrome (nếu chưa có)
+   - Truy cập: https://www.google.com/chrome/
+   - Tải và cài đặt Chrome phiên bản mới nhất
+   - Khởi động Chrome ít nhất 1 lần
+
+BƯỚC 2: Tải ChromeDriver
+   - Double click file: DOWNLOAD_CHROMEDRIVER.bat
+   - Chờ script tự động tải ChromeDriver phù hợp
+   - Script sẽ tự động phát hiện phiên bản Chrome của bạn
+
+BƯỚC 3: Cấu hình thông tin đăng ký
+   - Mở thư mục: automation\
+   - Chỉnh sửa file: auto_config.json
+   - Điền thông tin của bạn (xem hướng dẫn bên dưới)
+
+
+⚙️ HƯỚNG DẪN CẤU HÌNH auto_config.json
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mở file automation\auto_config.json bằng Notepad, điền như sau:
+
+{
+    "login": {
+        "username": "MSSV_CUA_BAN",      ← Thay bằng MSSV của bạn
+        "password": "MATKHAU_CUA_BAN"     ← Thay bằng mật khẩu của bạn
+    },
+    "registration": {
+        "course_codes": [
+            "DHMT13201",                  ← Mã học phần muốn đăng ký
+            "CNXH03202",                  ← Có thể thêm nhiều môn
+            "KTTH01102"
+        ],
+        "use_primary_schedule": true,     ← true = Đăng ký lớp đầu tiên
+        "retry_count": 3,                 ← Số lần thử lại nếu lỗi
+        "delay_between_retries": 2        ← Đợi 2 giây giữa các lần thử
+    }
+}
+
+⚠️ Lưu ý:
+   - Giữ nguyên dấu ngoặc kép "" và dấu phẩy ,
+   - Mã học phần lấy từ hệ thống ULSA
+   - Không chia sẻ file này cho người khác (có mật khẩu!)
+
+
+🚀 SỬ DỤNG TOOL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🟢 CÁCH 1: Chạy Giao Diện (Đề Xuất)
+   
+   1. Double click: ULSA_DangKyTinChi.exe
+   
+   2. Chờ cửa sổ hiện ra (10-30 giây lần đầu)
+   
+   3. Sử dụng giao diện:
+      - Tab "Đăng Nhập": Kiểm tra kết nối ULSA
+      - Tab "Đăng Ký": Chọn môn và đăng ký tự động
+      - Tab "Tra Cứu": Kiểm tra lịch học, học phí
+   
+   4. Click nút tương ứng để thực hiện
+
+🟢 CÁCH 2: Tự Động Hoàn Toàn
+   
+   1. Cấu hình sẵn auto_config.json
+   
+   2. Double click: ULSA_DangKyTinChi.exe
+   
+   3. Tool sẽ:
+      ✅ Tự động đăng nhập
+      ✅ Tự động tìm và đăng ký các môn đã cấu hình
+      ✅ Xử lý trùng lịch (nếu có)
+      ✅ Lưu kết quả vào registration_result.json
+
+
+💡 MẸO SỬ DỤNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ Đăng ký nhanh khi mở đợt đăng ký:
+   - Chuẩn bị trước file auto_config.json
+   - Khi đến giờ mở đăng ký: chạy .exe
+   - Tool sẽ tự động đăng ký trong vài giây
+
+✨ Kiểm tra trước:
+   - Dùng Tab "Đăng Nhập" để test kết nối trước
+   - Đảm bảo Chrome đã update phiên bản mới nhất
+
+✨ Sao lưu cấu hình:
+   - Copy thư mục automation\ sang USB
+   - Khi cần: paste lại và dùng ngay
+
+
+🔧 KHẮC PHỤC SỰ CỐ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ Lỗi: "Không tìm thấy ChromeDriver"
+   ➜ Giải pháp: Chạy DOWNLOAD_CHROMEDRIVER.bat
+
+❌ Lỗi: "Không kết nối được Chrome"
+   ➜ Giải pháp: 
+      1. Mở Chrome → Settings → About
+      2. Đợi Chrome tự động update
+      3. Khởi động lại máy
+      4. Chạy lại DOWNLOAD_CHROMEDRIVER.bat
+
+❌ Lỗi: "File không mở được" / "Windows Protected"
+   ➜ Giải pháp:
+      1. Click vào "More info"
+      2. Click "Run anyway"
+      3. Hoặc: Chuột phải → Properties → Unblock
+
+❌ Lỗi: "Đăng nhập thất bại"
+   ➜ Giải pháp:
+      1. Kiểm tra username/password trong auto_config.json
+      2. Thử đăng nhập thủ công trên web ULSA
+      3. Đảm bảo kết nối Internet ổn định
+
+❌ Lỗi: "Không tìm thấy học phần"
+   ➜ Giải pháp:
+      1. Kiểm tra mã học phần có đúng không
+      2. Đảm bảo đã đến thời gian đăng ký
+      3. Kiểm tra học phần còn chỗ trống
+
+
+📞 HỖ TRỢ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 Log chi tiết: mở Command Prompt ở thư mục tool, gõ:
+   
+   ULSA_DangKyTinChi.exe
+   
+   (sẽ thấy log chi tiết để debug)
+
+🔍 Kiểm tra file:
+   - registration_result.json: Kết quả đăng ký gần nhất
+   - automation\auto_config.json: Cấu hình của bạn
+   - drivers\: ChromeDriver đã tải
+
+
+⚖️ ĐIỀU KHOẢN SỬ DỤNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ Tool này chỉ dành cho mục đích học tập và hỗ trợ sinh viên.
+
+⚠️ Không sử dụng để spam hoặc gây hại hệ thống ULSA.
+
+⚠️ Người dùng tự chịu trách nhiệm về việc sử dụng tool.
+
+⚠️ Không chia sẻ thông tin đăng nhập cho người khác.
+
+
+🎓 CHÚC BẠN ĐĂNG KÝ THÀNH CÔNG!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Nếu tool hữu ích, hãy chia sẻ cho bạn bè cùng sử dụng! 🚀

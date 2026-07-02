@@ -1,0 +1,100 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║    🎓 ULSA - CÔNG CỤ ĐĂNG KÝ TÍN CHỈ TỰ ĐỘNG                     ║
+║                                                                    ║
+║    📖 HƯỚNG DẪN NHANH - 3 BƯỚC ĐƠN GIẢN                          ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  BƯỚC 1: SETUP LẦN ĐẦU (Chỉ làm 1 lần)                         │
+└─────────────────────────────────────────────────────────────────┘
+
+   👉 Click vào file:  SETUP_FIRST_TIME.bat
+
+   ⏳ Chờ script cài đặt Python dependencies (~2-5 phút)
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  BƯỚC 2: TẢI CHROMEDRIVER (Chỉ làm 1 lần)                      │
+└─────────────────────────────────────────────────────────────────┘
+
+   👉 Click vào file:  DOWNLOAD_CHROMEDRIVER.bat
+
+   ⏳ Script sẽ tự động tải ChromeDriver phù hợp với Chrome của bạn
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│  BƯỚC 3: CHẠY TOOL                                              │
+└─────────────────────────────────────────────────────────────────┘
+
+   👉 Click vào file:  RUN_GUI.bat
+
+   🎉 Tool sẽ mở giao diện đồ họa!
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📝 CẤU HÌNH THÔNG TIN CỦA BẠN:
+
+   1. Mở file:  automation\auto_config.json
+
+   2. Sửa thông tin:
+      {
+        "login_info": {
+          "student_id": "SV123456",      ← Mã sinh viên
+          "password": "matkhau123"        ← Mật khẩu
+        },
+        "registration": {
+          "subjects": [
+            {
+              "subject_code": "IT101",    ← Mã môn học
+              "class_code": "IT101_01"    ← Mã lớp
+            }
+          ]
+        }
+      }
+
+   3. Lưu file và chạy lại RUN_GUI.bat
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+❓ GẶP VẤN ĐỀ?
+
+   📖 Đọc file README.md để biết thêm chi tiết
+
+   🔧 Các lỗi thường gặp:
+
+      • Python chưa cài
+        → Tải tại: https://www.python.org/downloads/
+
+      • ChromeDriver lỗi
+        → Chạy lại DOWNLOAD_CHROMEDRIVER.bat
+
+      • Chrome không mở
+        → Cập nhật Chrome lên bản mới nhất
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+💡 TIPS HỮU ÍCH:
+
+   ✅ Đăng ký nhiều môn: Thêm nhiều subject vào auto_config.json
+
+   ✅ Chạy nhiều tài khoản: Copy thư mục này ra, đổi tên khác
+
+   ✅ Xem ảnh chụp: Vào thư mục automation\screenshots\
+
+   ✅ Tool portable: Copy cả thư mục sang máy khác được luôn!
+
+
+═══════════════════════════════════════════════════════════════════
+
+                    🎓 CHÚC BẠN ĐĂNG KÝ THÀNH CÔNG! 🎉
+
+═══════════════════════════════════════════════════════════════════

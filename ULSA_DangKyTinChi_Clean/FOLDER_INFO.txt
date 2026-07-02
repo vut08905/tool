@@ -1,0 +1,93 @@
+════════════════════════════════════════════════════════════════════
+   📦 THÔNG TIN THƯ MỤC CLEAN
+════════════════════════════════════════════════════════════════════
+
+📊 THỐNG KÊ:
+   • Tổng số thư mục: 3
+   • Tổng số files: 26
+   • Kích thước: ~20 MB (bao gồm ChromeDriver)
+
+════════════════════════════════════════════════════════════════════
+
+📁 CẤU TRÚC:
+
+ULSA_DangKyTinChi_Clean/
+│
+├── 📄 FILES CHÍNH (Root)
+│   ├── ▶️  RUN_GUI.bat                  → File chạy chính
+│   ├── 🔧 SETUP_FIRST_TIME.bat         → Setup lần đầu
+│   ├── 📥 DOWNLOAD_CHROMEDRIVER.bat    → Tải ChromeDriver
+│   ├── ⚙️  download_chromedriver.ps1    → Script PowerShell
+│   ├── 🐍 complete_gui.py               → Code GUI chính
+│   ├── 📦 requirements_full.txt         → Dependencies
+│   ├── 📝 QUICK_START.txt              → Hướng dẫn nhanh
+│   └── 📖 README.md                     → Hướng dẫn chi tiết
+│
+├── 📁 automation/ (18 files)
+│   ├── ⚙️  auto_config.json             → Config chính (QUAN TRỌNG!)
+│   ├── 🤖 auto_login_with_title_check.py → Script automation chính
+│   ├── 🤖 config_auto_login.py          → Script đăng ký tín chỉ
+│   ├── 📄 *.py                          → Các script automation khác
+│   └── 📁 screenshots/                  → Thư mục lưu ảnh chụp màn hình
+│
+└── 📁 drivers/ (2 files)
+    ├── 🚗 chromedriver.exe              → ChromeDriver (19MB)
+    └── 📖 README.md                     → Hướng dẫn ChromeDriver
+
+════════════════════════════════════════════════════════════════════
+
+✨ ĐẶC ĐIỂM:
+
+   ✅ Portable - Copy sang máy khác được ngay
+   ✅ Sạch sẽ - Chỉ chứa file cần thiết
+   ✅ Độc lập - Không phụ thuộc đường dẫn cố định
+   ✅ Dễ sử dụng - 3 bước đơn giản
+   ✅ An toàn - Chạy trong môi trường riêng (.venv)
+
+════════════════════════════════════════════════════════════════════
+
+🔑 FILES QUAN TRỌNG NHẤT:
+
+   1️⃣  QUICK_START.txt
+       → Đọc đầu tiên để biết cách sử dụng
+
+   2️⃣  SETUP_FIRST_TIME.bat
+       → Chạy đầu tiên để cài đặt
+
+   3️⃣  automation/auto_config.json
+       → Chỉnh sửa thông tin của bạn ở đây
+
+   4️⃣  RUN_GUI.bat
+       → Chạy tool sau khi setup xong
+
+════════════════════════════════════════════════════════════════════
+
+⚠️  LƯU Ý:
+
+   • Không xóa thư mục automation/ và drivers/
+   • File auto_config.json chứa mật khẩu, hãy bảo mật
+   • Nếu Chrome update, chạy lại DOWNLOAD_CHROMEDRIVER.bat
+   • Thư mục .venv sẽ được tạo khi chạy SETUP_FIRST_TIME.bat
+
+════════════════════════════════════════════════════════════════════
+
+🚀 CÁCH SỬ DỤNG:
+
+   Lần đầu tiên:
+   1. Chạy SETUP_FIRST_TIME.bat
+   2. Chạy DOWNLOAD_CHROMEDRIVER.bat
+   3. Sửa automation/auto_config.json
+   4. Chạy RUN_GUI.bat
+
+   Lần sau:
+   → Chỉ cần chạy RUN_GUI.bat
+
+════════════════════════════════════════════════════════════════════
+
+📞 HỖ TRỢ:
+
+   • Đọc README.md để biết chi tiết
+   • Xem automation/README.md để hiểu về automation
+   • Xem drivers/README.md để hiểu về ChromeDriver
+
+════════════════════════════════════════════════════════════════════

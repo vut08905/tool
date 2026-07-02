@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+GitNexus/.git_moved/
+PUSH_LEN_GITHUB.bat
+/test/dangkytinchi4.4.exe
+/final/dangkytinchiulsa.exe
+/final1/dist/dangkytinchi2.7.exe
+/final1/dangkytinchiulsa.exe
+/final1/build/dangkytinchi_baomat/dangkytinchi_baomat.pkg
+/final1/build/dangkytinchiulsa/dangkytinchiulsa.pkg
